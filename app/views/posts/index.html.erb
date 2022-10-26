@@ -16,7 +16,10 @@
       <td class="text-center"><%= post.content %></td>
       <td class="text-center"><%= post.user.email %></td>
       <td class="text-center">
+        <%= link_to 'Show', post_path(post) %>
+        <%= link_to 'Edit', edit_post_path(post) %>
       </td>
+
     </tr>
   <% end %>
 
